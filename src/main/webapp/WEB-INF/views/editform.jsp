@@ -16,7 +16,6 @@
         <tr><td>제목</td><td><form:input path="title" /></td></tr>
         <tr><td>글쓴이</td><td><form:input path="writer" /></td></tr>
         <tr><td>내용</td><td><form:textarea cols="50" rows="5" path="content" /></td></tr>
-        <input type="hidden" name="regDate" value="<%= new java.text.SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date()) %>">
     </table>
     <button type="submit" class="btn btn-primary">
         <i class="fa fa-pen"></i> 수정하기
