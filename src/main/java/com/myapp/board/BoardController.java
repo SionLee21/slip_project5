@@ -62,4 +62,10 @@ public class BoardController {
         }
         return "redirect:../list";
     }
+    @RequestMapping(value = "/view/{seq}", method = RequestMethod.GET)
+    public String viewBoard(@PathVariable("seq") int seq, Model model) {
+        BoardVO board = boardService.getBoard(seq);
+        model.addAttribute("board", board);
+        return "view";
+    }
 }

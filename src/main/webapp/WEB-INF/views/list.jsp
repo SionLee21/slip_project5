@@ -26,7 +26,7 @@
     <th class="table-header col-1">writer</th>
     <th class="table-header col-4">content</th>
     <th class="table-header col-2">regDate</th>
-    <th class="table-header col-2">Edit/Delete</th>
+    <th class="table-header col-2">Edit/Delete/View</th>
     <c:forEach items="${list}" var="u">
         <tr>
             <td>${u.seq}</td>
@@ -41,6 +41,9 @@
                 </button>
                 <button type="button" class="btn btn-secondary" onclick="delete_ok('${u.seq}')">
                     <i class="fa fa-trash"></i> 삭제
+                </button>
+                <button type="button" class="btn btn-info" onclick="location.href='view/${u.seq}'">
+                    <i class="fa fa-eye"></i> 보기
                 </button>
             </td>
         </tr>
