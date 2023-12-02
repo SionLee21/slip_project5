@@ -42,6 +42,9 @@
                 <button type="button" class="btn btn-secondary" onclick="delete_ok('${u.seq}')">
                     <i class="fa fa-trash"></i> 삭제
                 </button>
+                <button type="button" class="btn btn-info" onclick="location.href='view/${u.seq}'">
+                    <i class="fa fa-eye"></i> 보기
+                </button>
             </td>
         </tr>
     </c:forEach>

@@ -45,7 +45,7 @@ public class BoardDAO {
             vo.setTitle(rs.getString("title"));
             vo.setContent(rs.getString("content"));
             vo.setWriter(rs.getString("writer"));
-            vo.setRegDate(rs.getDate("regdate"));
+            vo.setRegDate(rs.getDate("regDate"));
             return vo;
         }
     }
