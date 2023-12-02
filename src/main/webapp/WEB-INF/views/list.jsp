@@ -26,7 +26,7 @@
     <th class="table-header col-1">writer</th>
     <th class="table-header col-4">content</th>
     <th class="table-header col-2">regDate</th>
-    <th class="table-header col-2">Edit/Delete</th>
+    <th class="table-header col-2">Edit/Delete/View</th>
     <c:forEach items="${list}" var="u">
         <tr>
             <td>${u.seq}</td>
