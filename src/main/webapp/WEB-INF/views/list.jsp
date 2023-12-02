@@ -25,8 +25,8 @@
     <th class="table-header col-2">title</th>
     <th class="table-header col-1">writer</th>
     <th class="table-header col-4">content</th>
-    <th class="table-header col-2">regDate</th>
-    <th class="table-header col-2">Edit/Delete/View</th>
+    <th class="table-header col-1">regDate</th>
+    <th class="table-header col-3">Edit/Delete/View</th>
     <c:forEach items="${list}" var="u">
         <tr>
             <td>${u.seq}</td>
@@ -51,7 +51,7 @@
 </table>
 <br>
 <button type="button" onclick="location.href='add'" class="btn btn-primary">
-    <i class="fa fa-plus"></i> 새 글 쓰기
+    <i class="fa fa-plus"></i> 추가
 </button>
 </body>
 </html>

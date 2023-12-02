@@ -21,7 +21,7 @@
     <button type="submit" class="btn btn-primary">
         <i class="fa fa-pen"></i> 수정하기
     </button>
-    <button type="button" class="btn btn-warning" onclick="history.back()">
+    <button type="button" class="btn btn-secondary" onclick="history.back()">
         <i class="fa fa-rotate-right"></i> 취소하기
     </button>
 </form:form>
